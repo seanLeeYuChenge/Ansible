@@ -9,7 +9,7 @@ def compare():
     b = int(request.args.get("b"))
 
     try:
-        if a > b:
+        if a > b:    
             return Response(json.dumps({"status":"a>b"}), mimetype="application/json")
         else:
             return Response(json.dumps({"status":"a<=b"}), mimetype="application/json")
